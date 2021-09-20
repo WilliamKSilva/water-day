@@ -16,7 +16,7 @@ Esta é uma aplicação feita com ReactJS que tem como objetivo principal auxili
 Para utilizar a aplicação você precisar ter o [Node.js](https://nodejs.org/).
 
 ```sh
-cd drink-water
+cd testando
 code .
 yarn start
 ```
