@@ -53,14 +53,27 @@
 
 #buttonCounterId {
     width: 30%; 
-    padding: 5px; 
-    left: 30%; 
-    bottom: 20%; 
+    padding: 0.1em 1.2em; 
+    box-sizing: border-box; 
+    text-decoration: none; 
+    border-radius: 0.5rem;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    background-color: rgb(51, 102, 153); 
+    border: 0;
+    color: #FFFFFF;
+    left: 30%;  
+    transition: all 0.2s;
+    bottom: 20%;  
     font-family: 'Montserrat', sans-serif; 
     font-weight: 500;
     position: relative; 
-    display: block;
-} 
+    display: block; 
+    cursor: pointer;
+}  
+
+#buttonCounterId:hover {
+    filter: brightness(1.2); 
+}
 
 .progressBarContainer {
     background-color: black; 
@@ -74,10 +87,11 @@
 }
 
 .progressBarContainer > div {
-    background-color: #1E90FF; 
+    background: linear-gradient(90deg, rgba(9,147,191,1) 0%, rgba(8,109,207,1) 42%, rgba(33,39,134,1) 100%);; 
     height: 100%;
     border-radius: 13px;  
-    width: 50%;
+    width: 0%; 
+    transition: all 0.2s;
 } 
 
 

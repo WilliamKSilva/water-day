@@ -4,8 +4,10 @@ import "./stylesheet.css";
 function RecipientItems() {
     
     const [cups, setCups] = useState(0); 
-    const [tamanho, setTamanho] = useState(5.71);
-
+    const [size, setSize] = useState(14.30); 
+    const [sizeTwo, setSizeTwo] = useState(25); 
+    const [sizeThree, setSizeThree] = useState(33.33);
+    const [id, setId] = useState(0)
 
     function firstRecipient() {
         const hide = document.getElementById('first-titleId').style.display = 'none'; 
@@ -13,7 +15,9 @@ function RecipientItems() {
         const hideRecipients = document.getElementById('recipientContainerId').style.display = 'none'
         const showProgressBar = document.getElementById('progressBarContainerId').style.display = 'block'; 
         const showButton = document.getElementById('buttonCounterId').style.display = 'block';
+        var value = 1;
         setCups(7); 
+        setId(1);
     }
     
     function secondRecipient() {
@@ -22,7 +26,9 @@ function RecipientItems() {
         const hideRecipients = document.getElementById('recipientContainerId').style.display = 'none'
         const showProgressBar = document.getElementById('progressBarContainerId').style.display = 'block'; 
         const showButton = document.getElementById('buttonCounterId').style.display = 'block';
-        setCups(4);
+        var value = 2
+        setCups(4); 
+        setId(2);
     } 
 
     function thirdRecipient() {
@@ -31,7 +37,9 @@ function RecipientItems() {
         const hideRecipients = document.getElementById('recipientContainerId').style.display = 'none'
         const showProgressBar = document.getElementById('progressBarContainerId').style.display = 'block'; 
         const showButton = document.getElementById('buttonCounterId').style.display = 'block';
-        setCups(3);
+        var value = 3
+        setCups(3); 
+        setId(3);
     } 
     
    function decrementCounter() {
@@ -41,8 +49,16 @@ function RecipientItems() {
             const showCongrats = document.getElementById('congratsTextId').style.display = 'block'; 
             const hideCounter = document.getElementById('CounterId').style.display = 'none';
        }  
-        setTamanho();
-        const progressBarChange = document.getElementById('progressBarId').style.width = tamanho + '%';
+        if (id == 1) {
+            setSize(size + 14.30);
+            const progressBarChange = document.getElementById('progressBarId').style.width = size + '%';
+        } else if ( id == 2) {
+            setSizeTwo(sizeTwo + 25); 
+            const progressBarChange = document.getElementById('progressBarId').style.width = sizeTwo + '%';
+        } else if (id == 3) {
+            setSizeThree(sizeThree + 33.33); 
+            const progressBarChange = document.getElementById('progressBarId').style.width = sizeThree + '%';
+        }
        
    } 
 
@@ -58,7 +74,7 @@ function RecipientItems() {
             </div> 
             <div className="Counter" id="CounterId">
                 <p>
-                    Você precisa tomar {cups} copos de água
+                    Você precisa tomar {cups} copo(s) de água
                 </p>
                 <button id="buttonCounterId" className="buttonCounter" onClick={decrementCounter}>
                     Tomou +1
