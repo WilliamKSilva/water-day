@@ -1,5 +1,5 @@
 ##  Drink-water 
-![GitHub](https://img.shields.io/github/last-commit/WilliamKSilva/drink-water)
+![GitHub](https://img.shields.io/github/last-commit/WilliamKSilva/water-day)
 ##  Descrição :pencil:
 Esta é uma aplicação feita com ReactJS que tem como objetivo principal auxiliar o usuário a controlar a quantidade ideal de água a ser ingerida no seu dia a dia. 
 ##  Features: 
