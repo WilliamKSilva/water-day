@@ -68,6 +68,9 @@ function RecipientItems() {
                 Escolha um recipiente:
             </h1>
             <div id="recipientContainerId" className="recipientContainer"> 
+                <p id="FirstId"> 300 ml </p> 
+                <p id="SecondId"> 500 ml </p> 
+                <p id="ThirdId"> 700 ml </p>
                 <input type="image" src="./300.png" onClick={firstRecipient}/> 
                 <input type="image" src="./500.png" onClick={secondRecipient} /> 
                 <input type="image" src="./700.png" onClick={thirdRecipient}/>

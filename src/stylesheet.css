@@ -105,4 +105,25 @@
     bottom: 67%;
     padding: 2rem; 
     display: none;
+} 
+
+#FirstId {
+    position: absolute; 
+    left: 33%; 
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 500;
+} 
+
+#SecondId {
+    position: absolute; 
+    left: 55%; 
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 500;
+} 
+
+#ThirdId {
+    position: absolute; 
+    left: 76%; 
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 500;
 }
